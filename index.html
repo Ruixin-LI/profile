@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>L</title>
+    <link href="./test.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon".>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        h1 {
+            background-color: #fff;
+        }
+        #change{
+            color: red;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("block").innerHTML = "My name is Li.";
+            for (var i = 0; i < 3; i++) {
+                const promise = new Promise((resolve, reject) => {
+                setTimeout(resolve, 1000 + i*1000)
+                });
+                promise.then(() => alert(i));
+            }
+            return 1;
+        }
+        function changeBackground(){
+            alert(("ababaab".search(/a/g)[0]))
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <a href="www.gatech.edu" target="_blank"><img src="./test.jpg" alt="Me" style="height:70px;width:70px" ></a>
+    <p id="block">My name is Li.</p>
+    <br/>
+    <p id='change'>look at me</p>
+    <iframe src="https://www.example.com" width="100px" height="100px"></iframe>
+    <!-- <script>let jsScript='a=2'; eval(jsScript); console.log(a)</script> -->
+    &lt;script&gt;&lt;/script&gt;
+    <br/>
+    <button onclick="getElementById('block').innerHTML='NO!'">change </button>
+    <br />
+    <button onclick="myFunction()">back</button>
+    <br/>
+    <button onclick="changeBackground()">haha</button>
+</body>
+
+</html>
